@@ -6,8 +6,9 @@
    <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Quicksand|Lobster+Two' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/projects.css">
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'css/common.css' %}">
+<link rel="stylesheet" href="{% static 'css/projects.css' %}">
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">

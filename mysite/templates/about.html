@@ -6,8 +6,9 @@
    <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Quicksand|Lobster+Two' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/about.css">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
 
   </head>
   <body>
@@ -46,27 +47,27 @@
             <p class="lead">I am a software engineer from Oklahoma and currently based in Philedephia. I have a wide number of experiences spanning artificial intelligence and computer vision to video game development. I'm also a self taught artist. When I'm not coding or drawing, you'll find me practicing the violin or working towards becoming more competitive at Hearthstone Heroes of Warcraft. </p>
           </div>
           <div class="col-lg-6">
-            <img class="about-img" src="img/blog/laptop.jpg">
+                  <img class="about-img" src="{% static "img/laptop.png" %}">
           </div>
           <div class="row ">
             <div class="col-lg-12 about-thumbnail-container">
               <div class="col-lg-2">
-                <img class="about-thumbnail" src="img/blog/laptop.jpg">
+                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
               </div>
               <div class="col-lg-2">
-                <img class="about-thumbnail" src="img/blog/laptop.jpg">
+                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
               </div>
               <div class="col-lg-2">
-                <img class="about-thumbnail" src="img/blog/laptop.jpg">
+                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
               </div>
               <div class="col-lg-2">
-                <img class="about-thumbnail" src="img/blog/laptop.jpg">
+                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
               </div>
               <div class="col-lg-2">
-                <img class="about-thumbnail" src="img/blog/laptop.jpg">
+                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
               </div>
               <div class="col-lg-2">
-                <img class="about-thumbnail" src="img/blog/laptop.jpg">
+                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
               </div>
             </div>
           </div>

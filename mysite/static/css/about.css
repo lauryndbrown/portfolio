@@ -1,0 +1,21 @@
+.about-thumbnail{
+    max-width:100%;
+    position:relative;
+    
+    background:rgba(254,209,54,.45);
+    opacity:.75;
+    transition:all ease .5s;-webkit-transition:all ease .5s;
+    -moz-transition:all ease .5s;
+}
+
+.about-thumbnail:hover{
+     opacity:1;
+}
+.about-thumbnail-container{
+    margin-top:30px;
+}
+
+.about-img{
+    max-width:100%;
+    position:relative;
+}
