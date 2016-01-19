@@ -1,10 +1,7 @@
 #index-header{
     background-color:#000; /*#384766;*/
     color:#fff;
-    /*background-image:  linear-gradient(
-      rgba(141, 73, 58, 0.25), 
-      rgba(94, 46, 31, 0.25)
-    ),url("/img/laptop.jpg");*/
+    background: url("../img/pencils2.jpg");
     padding: 1em;
     font-family: 'Open Sans', sans-serif;
 }
@@ -44,4 +41,6 @@
     margin-bottom:3em;
 }
 
-
+#banner-img{
+    width:200px;
+}

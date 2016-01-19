@@ -6,7 +6,7 @@ class BlogPost(models.Model):
    pub_date = models.DateTimeField('date published')
    image = models.ImageField(upload_to='blog')
    body = models.TextField()
-   
+   published = models.BooleanField(default=False)
 
 class PostComment(models.Model):
    poster_name = models.CharField(max_length = 60)
