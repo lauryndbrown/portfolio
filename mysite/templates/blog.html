@@ -37,79 +37,23 @@
    <div class="container demo-3">
 	    <div class="col-lg-12 text-center">
 	        <h2 class="section-heading">Blog</h2>
-	        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+	        <h3 class="section-subheading text-muted">Leaarn what has been on my mind recently.</h3>
 	        <hr>
 	    </div>
 			<ul class="grid cs-style-3">
+        {% for blog in blogs %}
 				<li>
 					<figure>
-                        <a href="{% url 'blog_post' 1 %}">
-							<img src="/img/blog/laptop.jpg" alt="img03">
+                        <a href="{% url 'blog_post' blog.id %}">
+                                <img src="{{ blog.image.url }}" alt="blog.image">
 							<figcaption>
-								<h3>Beating the Barrier</h3>
-								<span>Launching my Personal Site!</span>
+                            <h3>{{blog.title}}</h3>
+                            <span>{{blog.sub_title}}</span>
 							</figcaption>
 						</a>
 					</figure>
 				</li>
-				<li>
-					<figure>
-						<a href="#">
-							<img src="/img/blog/chess.jpg" alt="img01">
-							<figcaption>
-								<h3>10 Site Challenge</h3>
-								<span>Showcasing my Current Skills</span>
-							</figcaption>
-						</a>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<a href="#">
-							<img src="/img/blog/liberty-bell.jpg" alt="img02">
-							<figcaption>
-								<h3>Moving to Philly</h3>
-								<span>
-									A Fresh, New, Exciting Start
-								</span>
-							</figcaption>
-						</a>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<a href="#">
-							<img src="/img/blog/laptop.jpg" alt="img04">
-							<figcaption>
-								<h3>Safari</h3>
-								<span>Jacob Cummings</span>
-							
-							</figcaption>
-						</a>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<a href="#">
-							<img src="/img/blog/laptop.jpg" alt="img05">
-							<figcaption>
-								<h3>Phone</h3>
-								<span>Jacob Cummings</span>
-							</figcaption>
-						</a>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<a href="#">
-							<img src="/img/blog/laptop.jpg" alt="img06">
-							<figcaption>
-								<h3>Game Center</h3>
-								<span>Jacob Cummings</span>
-							</figcaption>
-						</a>
-					</figure>
-				</li>
+        {% endfor %}
 			</ul>
 		</div><!-- /container -->
       <div class="container">
