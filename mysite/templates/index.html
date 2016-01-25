@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% block page_title %}LB| Home{% endblock %}
 {% block css_files %}
  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+{% block nav_links %}
+    <li class=active><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li><a href="{% url 'projects' %}">Projects</a></li>
+    <li><a href="{% url 'blog' %}">Blog</a></li>
+    <li><a href="{% url 'contact' %}">Contact</a></li> 
 {% endblock %}
 {% block content %}
     <div class="jumbotron" id="index-header">
