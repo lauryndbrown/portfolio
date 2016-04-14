@@ -12,10 +12,10 @@
      opacity:1;
 }
 .about-thumbnail-container{
-    margin-top:30px;
+    margin:30px 30px;
 }
 
-.about-img{
+#about-img{
     max-width:100%;
     position:relative;
 }

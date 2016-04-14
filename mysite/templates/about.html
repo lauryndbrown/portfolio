@@ -5,6 +5,9 @@
 {% block css_files %}
  <link rel="stylesheet" href="{% static 'css/about.css' %}">
 {% endblock %}
+{% block js_files %}
+    <script src="{% static 'js/about.js' %}"></script>
+{% endblock %}
 {% block nav_links %}
     <li><a href="{% url 'index' %}">Home</a></li>
     <li class=active><a href="{% url 'about' %}">About</a></li>
@@ -19,36 +22,40 @@
            <hr>
       </div>
       <div class="col-lg-12">
-          <div class="col-lg-6 text-justify">
+        <div class="row ">
+         
+          <div class="col-lg-6">
+                  <img id="about-img" src="{% static "img/keyboard.jpg" %}">
+          </div>
+          <div class="col-lg-6 text-justify" id="about-text">
             <h3 class="text-center" >Overview</h3>
             <p class="lead">I am a software engineer from Oklahoma and currently based in Philedephia. I have a wide number of experiences spanning artificial intelligence and computer vision to video game development. I'm also a self taught artist. When I'm not coding or drawing, you'll find me practicing the violin or working towards becoming more competitive at Hearthstone Heroes of Warcraft. </p>
           </div>
-          <div class="col-lg-6">
-                  <img class="about-img" src="{% static "img/laptop.png" %}">
-          </div>
+        </div>
           <div class="row ">
             <div class="col-lg-12 about-thumbnail-container">
               <div class="col-lg-2">
-                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
+                      <img class="about-thumbnail" src="{% static "img/keyboard.jpg" %}" onclick="changeAbout('{% static "img/keyboard.jpg" %}')">
               </div>
               <div class="col-lg-2">
-                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
+                      <img class="about-thumbnail" src="{% static "img/books.jpg" %}" onclick="changeAbout('{% static "img/books.jpg" %}')">
               </div>
               <div class="col-lg-2">
-                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
+                      <img class="about-thumbnail" src="{% static "img/colored_pencils.jpg" %}" onclick="changeAbout('{% static "img/colored_pencils.jpg" %}')">
               </div>
               <div class="col-lg-2">
-                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
+                      <img class="about-thumbnail" src="{% static "img/hands.jpg" %}" onclick="changeAbout('{% static "img/hands.jpg" %}')" >
               </div>
               <div class="col-lg-2">
-                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
+                      <img class="about-thumbnail" src="{% static "img/beach.jpg" %}" onclick="changeAbout('{% static "img/beach.jpg" %}')">
               </div>
               <div class="col-lg-2">
-                      <img class="about-thumbnail" src="{% static "img/laptop.png" %}">
+                      <img class="about-thumbnail" src="{% static "img/rotary.jpg" %}"  onclick="changeAbout('{% static "img/rotary.jpg" %}')">
               </div>
             </div>
           </div>
       </div>
     </div>
     {% endblock %}
+
 
