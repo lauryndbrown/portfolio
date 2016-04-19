@@ -17,8 +17,13 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from portfolio.settings import MEDIA_ROOT
+from filebrowser.sites import site
+
 urlpatterns = [
+    url(r'^admin/filebrowser/', include(site.urls)),
+    url(r'^grappelli/', include('grappelli.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^tinymce/', include('tinymce.urls')),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve',
             {'document_root': MEDIA_ROOT, 'show_indexes': True}, name="media"),
    url(r'', include('mysite.urls')),

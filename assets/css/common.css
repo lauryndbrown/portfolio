@@ -1,0 +1,122 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+/*navigation bar*/
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.navbar-default .navbar-brand {
+  color: #030404;
+  font-family: 'Lobster Two', cursive;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #898282;
+
+}
+.navbar-default .navbar-text {
+  color: #030404;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #333;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.35em;
+  letter-spacing: 0.3em;
+  margin-right:.7em;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #898282;
+  background:rgba(254,209,54,.45);
+  opacity:1;
+  transition:all ease .5s;-webkit-transition:all ease .5s;
+  -moz-transition:all ease .5s;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #030404;
+  background-color: #FED136;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #898282;
+  
+  
+}
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #030404;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #030404;
+}
+.navbar-default .navbar-link {
+  color: #030404;
+}
+.navbar-default .navbar-link:hover {
+  color: #898282;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #030404;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #898282;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #898282;
+    background-color: #ffffff;
+  }
+}
+
+
+/*****************Sticky footer*****************/
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 90px;
+  margin-top:90px;
+  
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 90px;
+  background-color: #000;
+  color:#fff;
+}
+a, a:hover, a:focus{
+        color:#FED136;
+        
+}
+/*****************featurette*****************/
+/* Featurette
+-------------------------------------------------- */
+.input-group, textarea{
+    margin-bottom:1em;
+}
+
+
+/* Gradient color1 - color2 - color1 */
+
+hr {
+    border: 1px;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.text-muted{
+    color: #ffb400;/*#FED136;*/
+}
