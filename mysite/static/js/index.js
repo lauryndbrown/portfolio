@@ -16,9 +16,9 @@ $(document).ready(function() {
    
         var docScroll = $(document).scrollTop(); 
        // var offset1 =  $("#featurette1").scrollTop() -100;
-        var offset1 =  $("#feature1").offset().top -500;
-        var offset2 =  $("#feature2").offset().top -500;
-        var offset3 =  $("#feature3").offset().top -500;
+        var offset1 =  $("#feature1").offset().top -300;
+        var offset2 =  $("#feature2").offset().top -300;
+        var offset3 =  $("#feature3").offset().top -300;
  
     //when rich top of boxex than fire
     if(docScroll > offset1 ) {
