@@ -15,12 +15,17 @@
     color: #000;
     background-color: #FED136;
     border-color: #FED136;
-    border-radius:0px;
+    border-radius:10px;
 }
 .btn-primary:hover {
     background-color: #E8B916;
     border-color: #FED136;
-    border-radius:0px;
+    border-radius:10px;
+}
+.btn.btn-primary.btn-lg:active, .btn-primary.active {
+    background-color: #E8B916;
+    border-color: #FED136;
+    border-radius:10px;
 }
 .jumbotron.feature{
     
