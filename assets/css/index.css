@@ -5,7 +5,6 @@
     background-size: 1500px 600px;
     background-repeat: no-repeat;
     padding: 1em;
-    font-family: 'Open Sans', sans-serif;
 }
 #index-header-text{
      background-color:rgba(0, 0, 0, 0.25);
@@ -16,17 +15,21 @@
     color: #000;
     background-color: #FED136;
     border-color: #FED136;
-    border-radius:0px;
+    border-radius:10px;
 }
 .btn-primary:hover {
-    color: #fff;
     background-color: #E8B916;
     border-color: #FED136;
-    border-radius:0px;
+    border-radius:10px;
+}
+.btn.btn-primary.btn-lg:active, .btn-primary.active {
+    background-color: #E8B916;
+    border-color: #FED136;
+    border-radius:10px;
 }
 .jumbotron.feature{
     
-    
+    height:500px;    
     background-color:#fff;
     color:#000;
 }
@@ -45,4 +48,7 @@
 
 #banner-img{
     width:200px;
+}
+.featurette{
+        margin-top:7%;
 }
