@@ -28,3 +28,7 @@ urlpatterns = [
             {'document_root': MEDIA_ROOT, 'show_indexes': True}, name="media"),
    url(r'', include('mysite.urls')),
 ]
+if not settings.DEBUG:
+    urlpatterns += patterns('',
+        (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_PATH}),
+    )
